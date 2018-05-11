@@ -85,4 +85,17 @@ bot.command :amida do |_event, *args|
   res.join("\n")
 end
 
+
+bot.command :connect do |_event|
+  channel = _event.user.voice_channel
+  next "どこ行きゃええねん" unless channel
+  bot.voice_connect(channel)
+  "おいすー: #{channel.name}"
+end
+
+bot.command(:play) do |event|
+  voice_bot = event.voice
+  voice_bot.play_file('music.mp3')
+end
+
 bot.run
