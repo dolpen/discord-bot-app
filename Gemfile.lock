@@ -23,6 +23,8 @@ GEM
       ffi
     rbnacl (3.4.0)
       ffi
+    rbnacl-libsodium (1.0.16)
+      rbnacl (>= 3.0.1)
     rest-client (2.0.2)
       http-cookie (>= 1.0.2, < 2.0)
       mime-types (>= 1.16, < 4.0)
@@ -40,6 +42,7 @@ PLATFORMS
 
 DEPENDENCIES
   discordrb
+  rbnacl-libsodium
 
 BUNDLED WITH
    1.16.1
