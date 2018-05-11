@@ -23,6 +23,10 @@ $ heroku config:add DISCORD_TOKEN="botから取って来たトークン。secret
 $ heroku config
 // buildpack(bundlerとかいろいろいい感じにしてくれるやつ)のアサイン
 $ heroku create --buildpack https://github.com/heroku/heroku-buildpack-ruby.git
+// 音声系の入れるならここら辺も
+$ heroku create --buildpack https://github.com/challengee/heroku-buildpack-libsodium.git
+$ heroku create --buildpack https://github.com/xrisk/heroku-opus.git
+
 $ git push heroku master
 // 1台でええわこんなん、0にすると止められます
 $ heroku ps:scale worker=1
