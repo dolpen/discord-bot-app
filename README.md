@@ -27,4 +27,3 @@ $ git push heroku master
 // 1台でええわこんなん、0にすると止められます
 $ heroku ps:scale worker=1
 ```
-
